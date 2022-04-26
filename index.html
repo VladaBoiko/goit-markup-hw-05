@@ -37,7 +37,7 @@
             <div class="container hero-cont">
           
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open >Заказать услугу</button>
           
         </div>
         </section>  
@@ -91,9 +91,32 @@
             <div class="container">
                 <h2 class="what-we-do-title">Чем мы занимаемся</h2>
                 <ul class="ul what-we-do-list">
-                    <li class="what-we-do-item"><img src="./images/whatwedo(1).jpg" alt="Человек печатает нр планшет" width="370" height="294" /> </li>
-                    <li class="what-we-do-item"><img src="./images/whatwedo(2).jpg" alt="Просмотр на мониторе " width="370" height="294" /></li>
-                    <li class="what-we-do-item"><img src="./images/whatwedo(3).jpg" alt="Цветовое отображение" width="370" height="294" /></li>
+                    <li class="what-we-do-item">   
+                        <img src="./images/whatwedo(1).jpg" alt="Человек печатает нр планшет" width="370" height="294" /> 
+                    <div class="what-we-do-overlay">
+                        <p class="what-we-do-text">
+                        Десктопные приложения
+                    </p>
+                    </div>
+                    </li>
+                    <li class="what-we-do-item">
+                        
+                        <img src="./images/whatwedo(2).jpg" alt="Просмотр на мониторе " width="370" height="294" />
+                    <div class="what-we-do-overlay">
+                        <p class="what-we-do-text">
+                        Мобильные приложения
+                        </p>
+                    </div>
+                    </li>
+                    <li class="what-we-do-item">
+                        
+                        <img src="./images/whatwedo(3).jpg" alt="Цветовое отображение" width="370" height="294" />
+                    <div class="what-we-do-overlay">
+                        <p class="what-we-do-text">
+                        Дизайнерские решения
+                        </p>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -312,11 +335,17 @@
     </div>
         </div>
         </div>
-       
-    
     </footer>
 
-
-
+        <div class="backdrop is-hidden" data-modal>
+           <div class="modal">
+<button class="button-modal" data-modal-close>
+    <svg class="button-modal-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+</button>
+           </div>
+       </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
